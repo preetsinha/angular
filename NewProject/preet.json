@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Jasan Shopes",
+      "address": "noida",
+      "email": "jasan34624@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Karan Shopes",
+      "address": "india",
+      "email": "karan33624@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Arjun Shop",
+      "address": "india",
+      "email": "arjun24333@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Raman Shop",
+      "address": "Mumbai",
+      "email": "raman544333@gmail.com"
+    },
+    {
+      "name": "Kumar Shopes",
+      "email": "kumar3525@gmail.com",
+      "address": "Pakistan",
+      "id": 5
+    },
+    {
+      "name": "Pavan Shopes",
+      "email": "pavan133@gmail.com",
+      "address": "noida",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "name": "Preeti",
+      "email": "preeti123@gmail.com",
+      "password": "preeti123@",
+      "id": 1
+    },
+    {
+      "name": "Peter",
+      "email": "peter@12gmail.com",
+      "password": "12345",
+      "id": 2
+    }
+  ]
+}

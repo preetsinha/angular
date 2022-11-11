@@ -1,0 +1,28 @@
+
+<h2>Edit New Book :) </h2>
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+   <strong>Holy guacamole!</strong> Your Data Has Been Updated Successfully.
+   <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+   </button>
+ </div>
+<form [formGroup]="editBooks" (ngSubmit)="updateCollection()">
+   <div class="form-group">
+       <label for="exampleInputEmail1">Title</label>
+       <input type="text" formControlName="title" class="form-control"  placeholder="Enter book title">
+   </div>
+   <div class="form-group">
+       <label for="exampleInputPassword1">AuthorName</label>
+       <input type="text" formControlName="authorname" class="form-control" placeholder="Enter author name ">
+   </div>
+   <div class="form-group">
+       <label for="exampleInputPassword1">Subject</label>
+       <input type="text" formControlName="subject" class="form-control" placeholder="Enter book subject">
+   </div>
+   <div class="form-group">
+       <label for="exampleInputPassword1">BookNo.</label>
+       <input type="number" formControlName="bookno" class="form-control" placeholder="Enter bookno. ">
+   </div>
+   <br>
+   <button type="submit" class="btn btn-primary">Submit</button>
+</form> 

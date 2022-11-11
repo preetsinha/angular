@@ -1,0 +1,29 @@
+<h2>List of Books :)</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Subject</th>
+            <th scope="col">AuthorName</th>
+            <th scope="col">BookNo.</th>
+            <th scope="col">Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of collection">
+            <td scope="row">{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.subject}}</td>
+            <td>{{item.authorname}}</td>
+            <td>{{item.bookno}}</td>
+            <td>
+                <i (click)="deleteBook(item.id)" class="fa fa-trash" style="font-size:25px; color:red;"></i>
+                <a routerLink="/update/{{item.id}}">
+                    <i class="fa fa-edit" style="font-size:25px; color:blue;"></i>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
